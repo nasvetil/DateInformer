@@ -1,8 +1,10 @@
 import React from 'react';
 
+import Calendar from './Calendar/Calendar';
+
 function App() {
-  return(
-    <p>Hello, world!</p>
+  return (
+    <Calendar/>
   );
 }
 
