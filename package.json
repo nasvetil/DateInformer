@@ -1,0 +1,45 @@
+{
+  "name": "date-informer",
+  "version": "1.0.0",
+  "description": "A small app that shows information about the current date.",
+  "private": true,
+  "scripts": {
+    "test": "echo \"Test!\" && exit 0",
+    "dev": "cross-env NODE_ENV=development webpack --mode development",
+    "start": "cross-env NODE_ENV=development webpack-dev-server --mode development --open",
+    "build": "cross-env NODE_ENV=production webpack --mode production",
+    "remove": "rm -rf dist"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/nasvetil/DateInformer.git"
+  },
+  "author": "nasvetil",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/nasvetil/DateInformer/issues"
+  },
+  "homepage": "https://github.com/nasvetil/DateInformer#readme",
+  "devDependencies": {
+    "@babel/core": "^7.10.2",
+    "@babel/preset-env": "^7.10.2",
+    "@babel/preset-react": "^7.10.1",
+    "babel-eslint": "^8.2.6",
+    "babel-loader": "^8.1.0",
+    "clean-webpack-plugin": "^3.0.0",
+    "cross-env": "^7.0.2",
+    "eslint": "^4.19.1",
+    "eslint-loader": "^4.0.2",
+    "eslint-plugin-react": "^7.20.0",
+    "html-webpack-plugin": "^4.3.0",
+    "terser-webpack-plugin": "^3.0.2",
+    "webpack": "^4.43.0",
+    "webpack-cli": "^3.3.11",
+    "webpack-dev-server": "^3.11.0"
+  },
+  "dependencies": {
+    "@babel/polyfill": "^7.10.1",
+    "react": "^16.13.1",
+    "react-dom": "^16.13.1"
+  }
+}
