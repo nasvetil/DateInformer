@@ -34,7 +34,7 @@ module.exports = {
   },
   optimization: optimizationConfig(),
   resolve: {
-    extensions: ['.js', '.jsx']
+    extensions: ['.js', '.jsx', '.json']
   },
   module: {
     rules: [

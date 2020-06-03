@@ -4,7 +4,9 @@ import Calendar from './Calendar/Calendar';
 
 function App() {
   return (
-    <Calendar/>
+    <React.Fragment>
+      <Calendar />
+    </React.Fragment>
   );
 }
 

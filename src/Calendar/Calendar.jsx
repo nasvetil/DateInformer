@@ -23,13 +23,28 @@ function Calendar() {
     justify-content: space-around;
   `;
 
-  const DateYear = styled.div`
+  const DateHeader = styled.div`
     font-size: 24px;
     text-align: center;
     grid-column: 2;
     grid-row: 1;
     font-weight: bold;
     border-bottom: 2px solid saddlebrown;
+
+    display: grid;
+    grid-template-columns: 30px auto 30px;
+    grid-template-rows: auto;
+  `;
+
+  const DateButton = styled.div`
+    width: 30px;
+    height: 30px;
+  `;
+
+  const DateYear = styled.div`
+    text-align: center;
+    grid-column: 2;
+    grid-row: 1;
   `;
 
   const DateInfo = styled.div`
@@ -102,7 +117,11 @@ function Calendar() {
 
   return (
     <DateBlock isWeekend={getIsWeekend(currentDay.getDay())} hello="hello">
-      <DateYear>{currentDay.getFullYear()}</DateYear>
+      <DateHeader>
+        <DateButton>←</DateButton>
+        <DateYear>{currentDay.getFullYear()}</DateYear>
+        <DateButton>→</DateButton>
+      </DateHeader>
       <DateInfo>
         <DateDay>{currentDay.getDate()}</DateDay>
         <DateMonth>{getTextMonth(currentDay.getMonth())}</DateMonth>
